@@ -19,7 +19,7 @@ class InstallController extends Controller
 
     public function indexAction()
     {
-        if (file_exists('application/config/config.json')){
+        if (file_exists('application/config/config.php')){
             $this->view->redirect('');
         }
         if (!empty($_POST)) {

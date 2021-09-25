@@ -84,7 +84,7 @@ class Admin extends Model
 
 	public function editStyle($post)
 	{
-		$json_file = 'application/config/config.json';
+		$json_file = 'application/config/config.php';
 		$json = json_decode(file_get_contents($json_file),TRUE);
 		$countStyle = count($json['style']);
 		for ($id = 0; $id < $countStyle; $id++) {
@@ -100,7 +100,7 @@ class Admin extends Model
 	
 	public function addStyle($post)
 	{
-		$json_file = 'application/config/config.json';
+		$json_file = 'application/config/config.php';
 		$json = json_decode(file_get_contents($json_file),TRUE);
 		$idStyle = count($json['style']);
 		$addStyle = [
@@ -129,7 +129,7 @@ class Admin extends Model
 
 	public function addAdmin($post)
 	{
-		$json_file = 'application/config/config.json';
+		$json_file = 'application/config/config.php';
 		$json = json_decode(file_get_contents($json_file),TRUE);
 		$adminId = count($json['admins']);
 		$addAdmin = [
@@ -147,7 +147,7 @@ class Admin extends Model
 
 	public function editAdmin($post)
 	{
-		$json_file = 'application/config/config.json';
+		$json_file = 'application/config/config.php';
 		$json = json_decode(file_get_contents($json_file),TRUE);
 		$countAdmin = count($json['admins']);
 		$adminId = $post['admin-Id'];
@@ -166,7 +166,7 @@ class Admin extends Model
 
 	public function deleteAdmin($adminId)
 	{
-		$json_file = 'application/config/config.json';
+		$json_file = 'application/config/config.php';
 		$json = json_decode(file_get_contents($json_file),TRUE);
 		foreach($json['admins'] as $key => $val){
 			if ($key = $adminId) {

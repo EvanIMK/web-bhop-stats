@@ -28,7 +28,8 @@ class Router {
     }
 
     public function match() {
-        $url = trim($_SERVER['REQUEST_URI'], '/');
+		$arr = explode('/stats/', $_SERVER['REQUEST_URI']);
+		$url = $arr[1];
         foreach ($this->routes as $route => $params) {
             if (preg_match($route, $url, $matches)) {
                 foreach ($matches as $key => $match) {
@@ -47,7 +48,8 @@ class Router {
     }
 
     public function run(){
-        if ($this->match()) {
+        if ($this->match()) 
+		{
             $path = 'application\controllers\\'.ucfirst($this->params['controller']).'Controller';
             if (class_exists($path)) {
                 $action = $this->params['action'].'Action';
@@ -60,7 +62,8 @@ class Router {
             } else {
                 View::errorCode(404);
             }
-        } else {
+        } 
+		else {
             View::errorCode(404);
         }
     }

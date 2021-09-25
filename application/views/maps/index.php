@@ -29,7 +29,7 @@
 							</td>
 							<td class="text-center"><?php echo $mapItem['jumps'];?></td>
 							<td class="text-center"><?php echo $mapItem['strafes'];?></td>
-					        <td class="text-center"><span class="user-about"><a href="/maps/<?php echo $mapItem['map'];?>"><?=VI_MAIN_INDEX_MORE_DETAILED?></a></span></td>
+					        <td class="text-center"><span class="user-about"><a href="/stats/maps/<?php echo $mapItem['map'];?>"><?=VI_MAIN_INDEX_MORE_DETAILED?></a></span></td>
 					    </tr>
 					<?php endforeach;?>
 				</tbody>

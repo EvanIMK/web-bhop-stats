@@ -3,21 +3,21 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="/public/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/stats/public/img/favicon.ico" type="image/x-icon">
     <meta name="description" content="Бхоп статистика сервера"> 
     <meta name="keywords" content="бхоп,bhop,css,cs go">
     <meta name="author" content="Kepchuk">
     <title>Bhop Stat :: <?php echo $title;?></title>
-    <link rel="stylesheet" type="text/css" href="/public/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="/public/css/style.css">
-    <link rel="stylesheet" href="/public/css/all.min.css"> 
-    <link rel="stylesheet" type="text/css" href="/public/css/sweetalert2.min.css">
+    <link rel="stylesheet" type="text/css" href="/stats/public/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/stats/public/css/style.css">
+    <link rel="stylesheet" href="/stats/public/css/all.min.css"> 
+    <link rel="stylesheet" type="text/css" href="/stats/public/css/sweetalert2.min.css">
     
-    <script src="/public/js/jquery.js"></script>
-    <script src="/public/js/sweetalert2.all.min.js"></script>
-    <script src="/public/js/main.js"></script>
-    <script src="/public/js/form.js"></script>
-    <script src="/public/js/popper.js"></script>
+    <script src="/stats/public/js/jquery.js"></script>
+    <script src="/stats/public/js/sweetalert2.all.min.js"></script>
+    <script src="/stats/public/js/main.js"></script>
+    <script src="/stats/public/js/form.js"></script>
+    <script src="/stats/public/js/popper.js"></script>
 </head>
 <body>
     <div class="container-fluid px-0 indent" id="refresh">
@@ -27,7 +27,7 @@
                     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                         <div class="container-fluid">
                             <a class="navbar-brand text-logo" href="/">
-                                <img src="/public/img/logo-light.svg" width="40" height="40" class="d-inline-block align-top" alt="" loading="lazy">
+                                <img src="/stats/public/img/logo-light.svg" width="40" height="40" class="d-inline-block align-top" alt="" loading="lazy">
                                         BS - <?=VI_ADMIN_HED_INDEX_LOGO_TEXT?>
                             </a>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -67,8 +67,8 @@
         </div>
     </div>
 
-	<script type="text/javascript" src="/public/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="/public/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="/stats/public/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/stats/public/js/bootstrap.bundle.min.js"></script>
     
 </body>
 </html>

@@ -1,7 +1,7 @@
 <div class="row">
 	<div class="col-12">
 		<div class="login-logo text-center">
-			<img src="/public/img/logo-light.svg" width="80" height="80"/>Bhop <span class="text-color-green">Stats</span> <?=VI_ADMIN_LOGO_TEXT_AUTH?> 
+			<img src="/stats/public/img/logo-light.svg" width="80" height="80"/>Bhop <span class="text-color-green">Stats</span> <?=VI_ADMIN_LOGO_TEXT_AUTH?> 
 		</div>
 	</div>
 	<div class="col-12">

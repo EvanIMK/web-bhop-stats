@@ -44,7 +44,7 @@ define('VI_MAIN_SEARCH_RESULT_FALSE', 'Player not found');
 /*страница игрока*/
 define('VI_USER_INDEX_NOSTEAM_TEXT', 'The player plays with a pirated version of the game');
 define('VI_USER_INDEX_PROFILE', 'Profile');
-define('VI_USER_INDEX_THERE_IS_NO_RECORD', 'The player did not set any records');
+define('VI_USER_INDEX_THERE_IS_NO_RECORD', 'N/A');
 define('VI_USER_INDEX_ALLREC', 'Total records');
 define('VI_USER_INDEX_REC_BASE', 'Main records');
 define('VI_USER_INDEX_REC_BONUS', 'Bonus records');
@@ -212,5 +212,5 @@ define('LIB_SISTEM_STATUS_STEAM_NOT_IN_PLACE', 'Offline');
 define('LIB_SISTEM_STATUS_VAC_NO', 'There is no VAC ban');
 define('LIB_SISTEM_STATUS_VAC_YES', 'The player has a VAC ban');
 
-define('LIB_SISTEM_THERE_ARE_NO_RECORDS', 'The player did not pass any cards');
+define('LIB_SISTEM_THERE_ARE_NO_RECORDS', 'N/A');
 ?>

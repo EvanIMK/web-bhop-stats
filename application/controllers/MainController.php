@@ -20,16 +20,17 @@ class MainController extends Controller
 	public function indexAction()
 	{
 		if (!empty($_POST)) {
-			$url = 'search/'.$_POST['name'];
+			$url = 'stats/search/'.$_POST['name'];
 			$this->view->location($url);
 		}
 		$id = 1;
 		if (!isset($this->route['page'])) {
 			$page = 1;
 		}else {
-			$page = $this->route['page'] + 9;
+			$page = $this->route['page'];
 		}
-		$position = $id * $page;
+		
+		$position = ($page * 9) - (9 - $page);
 
 		$SxGeo = new SxGeo('application/lib/SxGeo.dat', SXGEO_BATCH | SXGEO_MEMORY); 
 		$sistem = new Sistem;
@@ -47,7 +48,7 @@ class MainController extends Controller
 		$this->view->render(TITLE_PAGE_HAME, $vars);
 	}
 
-	public function lastrocordsAction()
+	public function lastrecordsAction()
 	{
 		$sistem = new Sistem;
 		$User = new User;

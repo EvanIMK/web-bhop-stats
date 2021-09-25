@@ -16,11 +16,11 @@ class Install
 
     public function installForm($post)
     {
-        if (!file_exists('application/config/config.json')){
-            $fIn = fopen('application/config/config.json', 'w+');
+        if (!file_exists('application/config/config.php')){
+            $fIn = fopen('application/config/config.php', 'w+');
         }
 
-        $json_file = 'application/config/config.json';
+        $json_file = 'application/config/config.php';
         $json = json_decode(file_get_contents($json_file),TRUE);
 
         if ((isset($_SERVER['REQUEST_SCHEME']) AND $_SERVER['REQUEST_SCHEME'] === 'https') OR (isset($_SERVER['HTTPS']) AND $_SERVER['HTTPS'] === 'on')){

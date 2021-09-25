@@ -12,7 +12,6 @@ use application\lib\Json;
 
 class Sistem
 { 
-
 	public $db;
 	public $json;
 
@@ -26,7 +25,7 @@ class Sistem
 	//делаем датам читаемый вид
 	public function corectDate($date) 
 	{
-		$dateTitle = date('d.n.y, H:i', $date);
+		$dateTitle = date('d/m/Y, H:i', $date);
 		$time = time();
 		$difference = $time - $date;
 		$corectDate = floor($difference / (60 * 60 * 24));
@@ -123,7 +122,7 @@ class Sistem
 			'map' => $map,
 			'style' => $style,
 		];
-		$result = $this->db->row("SELECT * FROM playertimes WHERE `map` = :map AND `style` = :style AND `track` = 0 ORDER BY `time` DESC LIMIT 1", $params);
+		$result = $this->db->row("SELECT * FROM playertimes WHERE `map` = :map AND `style` = :style AND `track` = 0 ORDER BY `time` ASC LIMIT 1", $params);
 
 		return $result[0];
 	}

@@ -13,7 +13,7 @@ class Json
 
 	public function __construct()
 	{
-		$json = 'application/config/config.json';
+		$json = 'application/config/config.php';
 		if (!file_exists($json)) {
 			$this->json = false;
 		}

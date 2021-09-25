@@ -9,7 +9,7 @@
 			      				<?php echo $nosteam;?>
 			      			</div>
 			      			<div class="col-12 user-img">
-			      				<img src="/public/img/no-image.png" class="rounded mx-auto d-block">
+			      				<img src="/stats/public/img/no-image.png" class="rounded mx-auto d-block">
 			      			</div>
 			      			<div class="col-12 user-info">
 			      				<p><?=VI_USER_INDEX_NOSTEAM_TEXT?></p>
@@ -36,7 +36,7 @@
 			      			<?php echo $nosteam;?>
 			      		</div>
 			      		<div class="col-12 user-img">
-			      			<img src="/public/img/no-image.png" class="rounded mx-auto d-block">
+			      			<img src="/stats/public/img/no-image.png" class="rounded mx-auto d-block">
 			      		</div>
 			      	</div>
 			    <?php endif; ?>

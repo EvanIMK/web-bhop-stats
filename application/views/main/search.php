@@ -20,7 +20,7 @@
 					<?php foreach ($user as $userItem):?>
 					    <tr data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" title="<?php echo $sistem->corectDate($userItem['lastlogin'])['title'] ;?>">
 							<td><?php echo $userItem['name']; ?></td>
-							<td class="text-center"><img src="/public/img/flags/<?php echo mb_strtolower($sxgeo->getCountry($userItem['ip']));?>.png"></td>
+							<td class="text-center"><img src="/stats/public/img/flags/<?php echo mb_strtolower($sxgeo->getCountry($userItem['ip']));?>.png"></td>
 							<td class="text-center"><?php echo $sistem->corectDate($userItem['lastlogin'])['datediff'] ;?></td>
 							<td class="text-center"><?php echo $sistem->lastMap($userItem['auth']) ;?></td>
 							<td class="text-center"><?php echo round($userItem['points']) ;?></td>

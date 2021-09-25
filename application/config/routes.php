@@ -16,9 +16,9 @@ return [
 		'controller' => 'main',
 		'action' => 'index',
 	],
-	'lastrocords' => [
+	'lastrecords' => [
 		'controller' => 'main',
-		'action' => 'lastrocords',
+		'action' => 'lastrecords',
 	],
 	'user/{auth:\d+}' => [
 		'controller' => 'user',

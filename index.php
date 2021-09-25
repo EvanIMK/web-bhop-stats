@@ -12,9 +12,9 @@ use application\core\Lang;
 
 session_start();
 
-if (!file_exists('application/config/config.json')) {
+if (!file_exists('application/config/config.php')) {
   if ($_SERVER['REQUEST_URI'] != '/install') {
-    header('Location: /install');
+    header('Location: /stats/install');
     exit;
   }
 }
