@@ -44,7 +44,7 @@ class Sistem
 						$text = $corectDate.LIB_SISTEM_A_SECONDS_AGO;
 					}
 				}
-				if ($corectDate == 1) {
+				else if ($corectDate == 1) {
 					$text = $corectDate.LIB_SISTEM_A_MINUTE_AGO;
 				}elseif($corectDate > 1 AND $corectDate < 5){
 					$text = $corectDate.LIB_SISTEM_MINUTES_AGO;
@@ -52,7 +52,7 @@ class Sistem
 					$text = $corectDate.LIB_SISTEM_A_MINUTES_AGO;
 				}
 			}
-			if ($corectDate == 1) {
+			else if ($corectDate == 1) {
 				$text = $corectDate.LIB_SISTEM_AN_HOUR_AGO;
 			}elseif($corectDate > 1 AND $corectDate < 5){
 				$text = $corectDate.LIB_SISTEM_HOURS_AGO;
